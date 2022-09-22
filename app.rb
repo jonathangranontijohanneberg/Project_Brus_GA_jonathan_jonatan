@@ -10,3 +10,5 @@ get('/home_screen') do
     slim(:home_screen)
 
 end
+
+## Hej
