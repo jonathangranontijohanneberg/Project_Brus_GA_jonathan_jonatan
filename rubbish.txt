@@ -1,0 +1,20 @@
+
+
+###KLASS FÖR LJUDEN MEN ONÖDIG OM FÖR LITE INNEHÅLL FINNS PÅ SIDAN:
+
+class NoiseClass
+    def initialize(noise_1, noise_2, noise_3, noise_4)
+        @noise_1 = noise_1
+        @noise_2 = noise_2
+        @noise_3 = noise_3
+        @noise_4 = noise_4
+
+    end
+
+    def noises
+        
+        {noise_1: @noise_1, noise_2: @noise_2, noise_3: @noise_3, noise_4: @noise_4}
+    end
+end
+x = NoiseClass.new("White Noise", "Pink Noise")
+x.noises

@@ -9,12 +9,19 @@ html lang="en"
     body 
         div id="wrapper"
 
-            header 
-                nav style="background: salmon"
-                    |
-                    a href="/home_screen" Home 
-                    / a href="http//google.com" link2 (tentative)
+                section id="noise_section"
+                        header 
+                            img src="logo_test.png" alt="test_logo"/
+
+                    - @noise_info.each do |info|
+                        nav style="background: bisque" class="color_sections"
+                            section style="width: 100px; height: 100px;" class="noise_sections" 
+                                a href="https//:google.com" = info[:noise_name]
+            
+            
+                                / a href="http//google.com" link2 (tentative)
                     / a href="google.com" About Us (tentative)
+
 
 
             == yield
