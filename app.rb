@@ -8,8 +8,7 @@ require 'slim'
 
 
 
-get('/home_screen') do
-    # noises =
+get('/layout') do
     @noise_info = [
         {
             noise_name: "White Noise",
@@ -31,8 +30,7 @@ get('/home_screen') do
             noise_background_img: "brown_noise_img.jpg"
         }
     ]
-    slim(:home_screen)
-
+    slim(:layout)
 end
 
 # section id="noise_section"
