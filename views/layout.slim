@@ -7,24 +7,20 @@ html lang="en"
         title Document
         link rel="stylesheet" href="css/style.css"/
     body 
-    
+        div id="wrapper"
 
-    header 
-        nav style="background: salmon"
-            |
-            a href="/home_screen" Home 
-            / a href="http//google.com" link2 (tentative)
-            / a href="google.com" About Us (tentative)
+            header 
+                nav style="background: salmon"
+                    |
+                    a href="/home_screen" Home 
+                    / a href="http//google.com" link2 (tentative)
+                    / a href="google.com" About Us (tentative)
 
-    section style="background: bisque" id=""
-        section style="width: 100px; height: 100px;"
-        section 
-        section
 
-    footer
-        nav style="background: salmon"
-            |
-            a href="/home_screen" Home 
+            == yield
 
-    h1 style="background:red"
-    == yield
+
+            footer
+                nav style="background: salmon"
+                    |
+                    a href="/home_screen" Home 

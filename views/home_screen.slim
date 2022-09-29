@@ -4,3 +4,21 @@
 / DEMON SWORD SAMIDARE
 / WARRIORS ARE DESTINED TO FIGHT AS LONG AS THEY'RE ALIVE
 / 
+section id="noise_section"
+    - @noise_info.each do |info|
+        section style="background: bisque" class="color_sections"
+            section style="width: 100px; height: 100px;" class="sound_sections" = info[:noise_1]
+            section style="width: 100px; height: 100px;" class="sound_sections" = info[:noise_2]
+/ - @dogs.each do |dog|
+/   h3 Name:  #{dog[:name]}
+/   p The dog #{dog[:name]} is #{dog[:age]} years old.
+
+    / - @data.each do |info|
+    /     article class="user-card"
+    /         div class="profile-img"
+    /             img src="img/#{info['img_src']}.jpg" alt="#{info['name']}"/
+    /         div class="info"
+    /             label class="name" = info["name"]
+    /             label class="email" = info["mail"]
+    /             label class="tel" = info["phone"]
+    /             label class="department" = info["department"]
