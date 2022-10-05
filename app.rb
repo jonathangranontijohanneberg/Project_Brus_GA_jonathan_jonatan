@@ -8,30 +8,56 @@ require 'slim'
 
 
 
-get('/layout') do
-    @noise_info = [
-        {
-            noise_name: "White Noise",
-            noise_background_img: "white_noise_img.jpg"
+# get('/layout') do
+
+#     slim(:layout)
+# end
+
+
+
+get('/white_noise') do
+
+    @noise_info = {
+        noise_name: "White Noise",
+        noise_background_img: "white_noise_img.jpg"
             # noise_file: ""
             # /img/sinatra_img.jpg
-        },
-        {
-            noise_name: "Red Noise",
-            noise_background_img: "brown_noise_img.jpg"
-        },
-        {
-            noise_name: "Pink Noise",
-            noise_background_img: "pink_noise_img.jpg"
-
-        },
-        {
-            noise_name: "Brown Noise",
-            noise_background_img: "brown_noise_img.jpg"
         }
-    ]
-    slim(:layout)
+    slim(:noises)
+
 end
+
+
+get('/red_noise') do
+
+    @noise_info = {
+        noise_name: "Red Noise",
+        noise_background_img: "brown_noise_img.jpg"        
+        }
+    slim(:noises)
+
+end
+
+get('/pink_noise') do
+
+    @noise_info = {
+        noise_name: "Pink Noise",
+        noise_background_img: "pink_noise_img.jpg"
+        }
+    slim(:noises)
+
+end
+
+get('/brown_noise') do
+
+    @noise_info = {
+        noise_name: "Brown Noise",
+        noise_background_img: "brown_noise_img.jpg"
+        }
+    slim(:noises)
+
+end
+
 
 # section id="noise_section"
 #     - @noise_info.each do |info|

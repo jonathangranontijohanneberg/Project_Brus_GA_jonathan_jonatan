@@ -17,3 +17,14 @@
     /             label class="email" = info["mail"]
     /             label class="tel" = info["phone"]
     /             label class="department" = info["department"]
+
+section id="noise_description"
+    
+
+@noise_info[:noise_name]
+
+
+
+/ - @noise_info.each do |info|
+/         section style="background: red; padding: 15px; width: 40px; height: 40px;" class="noise_sections" 
+/             a href="https//:google.com" = info[:noise_name]

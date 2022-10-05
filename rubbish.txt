@@ -18,3 +18,10 @@ class NoiseClass
 end
 x = NoiseClass.new("White Noise", "Pink Noise")
 x.noises
+
+
+################
+
+                    - @noise_info.each do |info|
+                            section style="background: red; padding: 15px; width: 40px; height: 40px;" class="noise_sections" 
+                                a href="https//:google.com" = info[:noise_name]
