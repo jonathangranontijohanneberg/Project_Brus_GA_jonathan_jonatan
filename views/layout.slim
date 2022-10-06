@@ -7,11 +7,11 @@ html lang="en"
         title Document
         link rel="stylesheet" href="css/style.css"/
     body 
-        div id="wrapper" style="height: 100vh; margin: none; border: none; padding: none;"
+        div id="wrapper" 
 
-            section id="noise_section" style="width: 230px; height: 90%; background: black;"
-                header style="background: green;"
-                    img style="height: auto; width: 200px;" src="img/logo_test.png" alt="test_logo" id="logo_img"/
+            section id="noise_section" 
+                header
+                    img src="img/logo_test.png" alt="test_logo"/
 
                 nav style="background: bisque; width: 100%; height: 100px; display:flex; flex-direction: row; justify-content: space-evenly;" class="noise_button_nav"
                     button class="noise_buttons" id="white_noise_button"
@@ -34,12 +34,12 @@ html lang="en"
 
 
 
-            section id="screen_section" style="height: 100px; width: 1000px; color: blue;"
+            section id="screen_section" 
                 == yield
 
 
-            footer style="width: 100%; height: 10%;"
-                nav style="background: salmon"
+            footer 
+                nav 
                     |
                     a href="/home_screen" Home 
                     a href="/home_screen" About_us 
