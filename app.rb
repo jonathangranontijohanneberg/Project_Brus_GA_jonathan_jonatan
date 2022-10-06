@@ -2,18 +2,6 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'slim'
 
-# get('/') do
-
-# end
-
-
-
-# get('/layout') do
-
-#     slim(:layout)
-# end
-
-
 
 get('/white_noise') do
 
