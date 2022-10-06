@@ -19,6 +19,7 @@
 header { 
     background: green;
     grid-area: he;
+    height: 25vh;
 }
 
 #noise_section {
@@ -38,7 +39,7 @@ img {
 .color_sections {
     background: bisque;
     width: 100%;
-    height: 100px;
+    height: 10vh;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
