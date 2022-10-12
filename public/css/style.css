@@ -48,6 +48,10 @@ img {
     color: pink;
     background-color: blue;
     grid-area: ss;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
 }
 
 footer {
@@ -59,9 +63,19 @@ nav {
     background: salmon;
 }
 
-
 #about_us_js_section {
     background: green;
-    height: 90%;
     position: absolute;
+    z-index: 2;
 }
+
+/* #black_screen {
+    height: 100%;
+    width: 100%;
+    background: black;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+} */

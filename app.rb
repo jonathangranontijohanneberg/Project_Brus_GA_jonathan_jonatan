@@ -2,6 +2,9 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'slim'
 
+get('/') do
+    slim(:power)
+end
 
 get('/white_noise') do
 
