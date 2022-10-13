@@ -10,28 +10,28 @@ about_us.style.visibility = visibility_about_us;
 visibility_contact = 'hidden'
 contact.style.visibility = visibility_contact;
 
-// function toggleMenu() {
-//     if (visibility_about_us == 'hidden') {
-//         visibility_about_us = 'visible';
-//     }
-//     else {
-//         visibility_about_us = 'hidden';
-//     }
-//     about_us.style.visibility = visibility_about_us;
-//     about_us_link.classList.toggle("about_us_link")
-// }
+function toggleMenu() {
+    if (visibility_about_us == 'hidden') {
+        visibility_about_us = 'visible';
+    }
+    else {
+        visibility_about_us = 'hidden';
+    }
+    about_us.style.visibility = visibility_about_us;
+    about_us_link.classList.toggle("about_us_link")
+}
 
-// function toggleMenu2() {
-//     if (visibility_contact == 'hidden') {
-//         visibility_contact = 'visible';
-//     }
-//     else {
-//         visibility_contact = 'hidden';
-//     }
-//     contact.style.visibility = visibility_contact;
-//     contact_link.classList.toggle("contact_link")
-// }
+function toggleMenu2() {
+    if (visibility_contact == 'hidden') {
+        visibility_contact = 'visible';
+    }
+    else {
+        visibility_contact = 'hidden';
+    }
+    contact.style.visibility = visibility_contact;
+    contact_link.classList.toggle("contact_link")
+}
 
 
-// about_us_link.addEventListener("click", toggleMenu)
-// contact_link.addEventListener("click", toggleMenu2)
+about_us_link.addEventListener("click", toggleMenu)
+contact_link.addEventListener("click", toggleMenu2)
