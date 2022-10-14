@@ -1,5 +1,7 @@
 
 
+Kontroll -> Skift -> R
+
 ###KLASS FÖR LJUDEN MEN ONÖDIG OM FÖR LITE INNEHÅLL FINNS PÅ SIDAN:
 
 class NoiseClass

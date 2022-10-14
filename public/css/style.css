@@ -69,6 +69,18 @@ nav {
     z-index: 2;
 }
 
+#contact_js_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: salmon;
+    position: absolute;
+    z-index: 2;
+    height: 70%;
+    width: 70%;
+}
+
 /* #black_screen {
     height: 100%;
     width: 100%;
