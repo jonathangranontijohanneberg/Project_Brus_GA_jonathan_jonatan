@@ -56,10 +56,3 @@ get('/brown_noise') do
     slim(:noises)
 
 end
-
-
-# section id="noise_section"
-#     - @noise_info.each do |info|
-#         section style="background: bisque" class="color_sections"
-#             section style="width: 100px; height: 100px;" class="noise_sections" = info[:noise_1]
-#             section style="width: 100px; height: 100px;" class="noise_sections" = info[:noise_2]

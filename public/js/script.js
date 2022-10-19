@@ -1,5 +1,3 @@
-// const about_us = document.getElementById("about_us_js_section")
-// const about_us_link = document.getElementById("about_us_link")
 
 var about_us = document.getElementById('about_us_js_section');
 var contact = document.getElementById('contact_js_section');
