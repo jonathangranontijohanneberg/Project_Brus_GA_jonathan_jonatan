@@ -39,5 +39,18 @@ function toggleMenu2() {
 }
 
 
+function play_pause(player) {
+
+    var audio_player = document.getElementById(player);
+  
+    if (audio_player.paused) {
+      audio_player.play();
+    } else {
+      audio_player.pause();
+    }
+    // speaker_img_section.classList.toggle("audio_player")
+}
+  
+
 about_us_link.addEventListener("click", toggleMenu)
 contact_link.addEventListener("click", toggleMenu2)
