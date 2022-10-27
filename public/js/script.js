@@ -38,19 +38,33 @@ function toggleMenu2() {
     contact_link.classList.toggle("contact_link")
 }
 
+var sec = 0;
+function pad ( val ) { return val > 9 ? val : "0" + val; }
+
+function timer(){
+    document.getElementById("seconds").innerHTML=pad(++sec%60);
+    document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
+}
+var timerInterval = setInterval(timer, 1000);
+
+  
 
 function play_pause(player) {
 
     var audio_player = document.getElementById(player);
-  
+    paused = false;
+
     if (audio_player.paused) {
       audio_player.play();
+    timerInterval = setInterval(timer, 1000);
+
     } else {
       audio_player.pause();
+      clearInterval(timerInterval);
+
     }
-    // speaker_img_section.classList.toggle("audio_player")
 }
-  
+
 
 about_us_link.addEventListener("click", toggleMenu)
 contact_link.addEventListener("click", toggleMenu2)

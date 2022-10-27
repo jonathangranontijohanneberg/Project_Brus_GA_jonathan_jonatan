@@ -4,6 +4,9 @@ h2 id="noise_name" = @noise_info[:noise_name]
 section id="noise_description"
     p = @noise_info[:noise_description]
 
+section id="timer" 
+  <label id="minutes">00</label>:<label id="seconds">00</label>
+
 <audio autoplay loop id="audio_player" preload="none">
   <source src="sounds/#{@noise_info[:noise_file]}" type="audio/mpeg">
 </audio>
