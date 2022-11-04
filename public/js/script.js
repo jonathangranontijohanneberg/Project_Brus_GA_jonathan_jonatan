@@ -1,40 +1,51 @@
 
 var about_us = document.getElementById('about_us_js_section');
 var contact = document.getElementById('contact_js_section');
+var noise_text = document.getElementById('noise_description_text');
 
-visibility_about_us = 'hidden'
-about_us.style.visibility = visibility_about_us;
+display_about_us = 'none'
+about_us.style.display = display_about_us;
 
-visibility_contact = 'hidden'
-contact.style.visibility = visibility_contact;
+display_contact = 'none'
+contact.style.display = display_contact;
+
+display_noise_text = 'block'
+noise_text.style.display = display_noise_text;
+
 
 function toggleMenu() {
-    if (visibility_about_us == 'hidden') {
-        visibility_about_us = 'visible';
-        visibility_contact = 'hidden';
-
+    if (display_about_us == 'none') {
+        display_about_us = 'block';
+        display_contact = 'none';
+        display_noise_text = 'none';
     }
     else {
-        visibility_about_us = 'hidden';
-        visibility_contact = 'hidden';
+        display_about_us = 'none';
+        display_contact = 'none';
+        display_noise_text = 'block';
     }
-    about_us.style.visibility = visibility_about_us;
-    contact.style.visibility = visibility_contact;
+    about_us.style.display = display_about_us;
+    contact.style.display = display_contact;
+    noise_text.style.display = display_noise_text;
+
     about_us_link.classList.toggle("about_us_link")
 }
 
 function toggleMenu2() {
-    if (visibility_contact == 'hidden') {
-        visibility_contact = 'visible';
-        visibility_about_us = 'hidden';
-
+    if (display_contact == 'none') {
+        display_contact = 'block';
+        display_about_us = 'none';
+        display_noise_text = 'none';
     }
     else {
-        visibility_contact = 'hidden';
-        visibility_about_us = 'hidden';
+        display_contact = 'none';
+        display_about_us = 'none';
+        display_noise_text = 'block';
     }
-    about_us.style.visibility = visibility_about_us;
-    contact.style.visibility = visibility_contact;
+    about_us.style.display = display_about_us;
+    contact.style.display = display_contact;
+    noise_text.style.display = display_noise_text;
+
     contact_link.classList.toggle("contact_link")
 }
 
@@ -46,8 +57,6 @@ function timer(){
     document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
 }
 var timerInterval = setInterval(timer, 1000);
-
-  
 
 function play_pause(player) {
 

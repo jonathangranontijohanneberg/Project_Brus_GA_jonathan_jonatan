@@ -52,11 +52,11 @@ footer {
     background-color: aqua;
 }
 
-#about_us_js_section {
+/* #about_us_js_section {
     background: green;
     position: absolute;
     z-index: 2;
-}
+} */
 
 .noise_button_nav {
     background-color: aqua;
@@ -93,7 +93,7 @@ footer {
     height: 8vh;
     width: 8vh;
 }
-
+/* 
 #contact_js_section {
     display: flex;
     justify-content: center;
@@ -105,7 +105,7 @@ footer {
     height: 70%;
     width: 70%;
     opacity: 70%;
-}
+} */
 
 #screen_wrapper {
     height: 100vh;
