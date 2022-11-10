@@ -2,7 +2,23 @@
 h2 id="noise_name" = @noise_info[:noise_name]
 
 section id="noise_description"
-    p = @noise_info[:noise_description]
+    section id="about_us_js_section"
+        h1 About Us
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui enim earum ipsam corrupti amet tempora veniam! Ducimus sunt eaque vel.
+    section id="contact_js_section"
+        h1 Contact us through:
+        h2 Phone
+        ul 
+            li 073-555-5555
+            li 023-665-5578
+        h2 Email
+        ul
+            li jonathan.jansengrano@elev.ga.ntig.se
+            li jonatan.alestig@elev.ga.ntig.se
+    p id="noise_description_text" = @noise_info[:noise_description]
+
+section id="timer" 
+  <label id="minutes">00</label>:<label id="seconds">00</label>
 
 <audio autoplay loop id="audio_player" preload="none">
   <source src="sounds/#{@noise_info[:noise_file]}" type="audio/mpeg">
