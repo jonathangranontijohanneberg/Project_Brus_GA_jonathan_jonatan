@@ -1,5 +1,11 @@
 
 
+1. ruby app.rb -o 0.0.0.0 
+2. Kommandotolken, skriv...?
+3. Ta koden följd av (NÅGOTORD)
+4. Be andra skriva in KODEN:4567 i webläsaren.
+
+
 Kontroll -> Skift -> R
 
 ###KLASS FÖR LJUDEN MEN ONÖDIG OM FÖR LITE INNEHÅLL FINNS PÅ SIDAN:
